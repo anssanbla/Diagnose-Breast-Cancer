@@ -42,6 +42,8 @@ validationData <- data[ind==2,]
 dataFormula <- Class ~ ClumpThickness + UniformityCellSize + UniformityCellShape + MarginalAdhesion + SingleEpithelialCellSize + BareNuclei + BlandChromatin + NormalNucleoli + Mitoses
 Breast_Cancer_rpart <- rpart(dataFormula, data = trainData, control = rpart.control(minsplit = 10))
 rpartMod <- rpart(Class ~ ClumpThickness + UniformityCellSize + UniformityCellShape + MarginalAdhesion + SingleEpithelialCellSize + BareNuclei + BlandChromatin + NormalNucleoli + Mitoses, data = trainData, method = "class")
+plot(model)
+text(model, digits = 3)
 printcp(rpartMod)
 
 plotcp(rpartMod)
