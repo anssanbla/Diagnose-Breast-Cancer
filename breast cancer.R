@@ -1,3 +1,4 @@
+# Agus(002), Risma(006), Anissa(007)
 # Decision Tree Classification on Breast cancer dataset
 lokasi_kerja <- "D:/wd/TugasBesar"
 setwd(lokasi_kerja)
